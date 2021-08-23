@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="PiMath Landing Page" />
+    <meta name="author" content="Pedro M. M. de Paula" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>?????</title>
+    <!--link rel="stylesheet" href="styles/reset.css"-->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Computer Modern Serif-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="images/pixil-frame-0.png" />
+      <nav id="nav-bar">
+        <a class="nav-link" href="#math-cons">Mathematical Consulting</a>
+        <a class="nav-link" href="#how-it-works">How it works</a>
+        <a class="nav-link" href="#services">Service Plans</a>
+      </nav>
+    </header>
+    <main>
+      <section id="math-cons">
+        <h2>What is Mathematical Consulting?</h2>
+        <p>Use Mathematics to diagnose and transform ill-defined problems!</p>
+        <p>
+          Apply mathematical information and processes to create a workable and
+          usable solution!
+        </p>
+      </section>
+      <section id="how-it-works">
+        <h2>How does it work?</h2>
+        <iframe
+          id="video"
+          width="1532"
+          height="630"
+          src="https://www.youtube.com/embed/OmJ-4B-mS-Y"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section id="services">
+        <h2>Service plans</h2>
+        <p>
+          Problems ranging from education to application, individuals and
+          corporations.
+        </p>
+        <div id="plans">
+        <div class="plan">
+          <h3>Educational consulting</h3>
+          <p>Teaching assistance</p>
+          <p>Mathematical counseling</p>
+          <p>Courseware development</p>
+          <p>Mathematical evaluation</p>
+        </div>
+        <div class="plan">
+          <h3>Research consulting</h3>
+          <p>Research training</p>
+          <p>Research assistance</p>
+          <p>Research evaluation</p>
+          <p>Research development</p>
+        </div>
+        <div class="plan">
+          <h3>Applied consulting</h3>
+          <p>Personnel training</p>
+          <p>Mathematical modelling</p>
+          <p>Inter-disciplinary collaboration</p>
+          <p>Data analysis and algorithms</p>
+        </div>
+      </div>
+      </section>
+      <section id="contact">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <label id="email-label" class="form-question" for="email"
+            >Interested in our services? Contact us for a
+            <strong>free quote</strong>.</label
+          >
+          <input
+            id="email"
+            class="form-input"
+            type="email"
+            name="email"
+            placeholder="Email address"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+          />
+
+          <input id="submit" class="submit-button" type="submit" value="Send" />
+        </form>
+      </section>
+    </main>
+    <footer id="footer">
+      <div>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </div>
+      <p>Copyright 2021, PiMath Consultancy</p>
+    </footer>
+  </body>
+</html>

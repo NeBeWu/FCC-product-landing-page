@@ -1,0 +1,1 @@
+This repository is the product of my work on [FreeCodeCamp's Responsive Web Design third project](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page).

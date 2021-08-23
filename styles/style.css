@@ -1,0 +1,434 @@
+/* Mobile-portrait */
+
+/********** Root **********/
+:root {
+  --color-1: #ebf7e3;
+  --color-2: #9bd770;
+  --color-3: #66b032;
+  --color-4: #375f1b;
+  --color-5: #1b3409;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 1vw;
+  scroll-padding-top: 44rem;
+}
+
+/********** Body **********/
+body {
+  margin: 0;
+  font-family: "Computer Modern Serif", serif;
+  color: var(--color-5);
+  background-color: var(--color-2);
+}
+
+/********** Header **********/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  background-color: var(--color-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header-img {
+  margin-top: 3rem;
+  height: 13rem;
+  width: 100rem;
+}
+
+/********** Navigation Bar **********/
+#nav-bar {
+  margin-top: 3rem;
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 5rem;
+  font-weight: 600;
+  color: var(--color-1);
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: var(--color-5);
+}
+/********** Main **********/
+main {
+  margin: 4rem;
+  margin-top: 44rem;
+  padding: 0;
+  font-size: 5rem;
+  text-align: center;
+}
+
+section {
+  margin-top: 4rem;
+}
+
+section h2,
+p {
+  margin: 2rem;
+}
+
+#video {
+  max-width: 100%;
+  max-height: 80rem;
+}
+
+.plan {
+  margin: 6rem 0;
+  text-align: center;
+  border-color: var(--color-5);
+  border-width: 1rem;
+  border-style: solid;
+}
+
+.plan h3 {
+  margin: 0;
+  padding: 6rem 0;
+  background-color: var(--color-3);
+}
+
+#form {
+  margin-top: 6rem;
+  font-size: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#email-label {
+  font-weight: 700;
+}
+
+#email {
+  margin-top: 2rem;
+  font-size: 6rem;
+}
+
+#submit {
+  margin-top: 4rem;
+  padding: 2rem 40rem;
+  display: block;
+  font-size: 6rem;
+  color: var(--color-1);
+  background: var(--color-3);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+/********** Footer **********/
+footer {
+  margin-bottom: 0;
+  font-size: 5rem;
+  color: var(--color-1);
+  background-color: var(--color-4);
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+footer a {
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--color-1);
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer p {
+  margin: 0;
+  text-align: left;
+  color: var(--color-2);
+}
+
+/************************************************** Medias **************************************************/
+
+/* Mobile-landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /********** Root **********/
+  html {
+    font-size: 0.6vw;
+    scroll-padding-top: 24.4rem;
+  }
+
+  /********** Body **********/
+
+  /********** Header **********/
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /********** Navigation Bar **********/
+  /********** Main **********/
+  main {
+    margin: 10rem;
+    margin-top: 24.5rem;
+    font-size: 6rem;
+  }
+
+  #submit {
+    padding: 2rem 20rem;
+  }
+
+  /********** Footer **********/
+}
+
+/* Tablet-portrait */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /********** Root **********/
+  html {
+    font-size: 0.6vw;
+    scroll-padding-top: 24.4rem;
+  }
+
+  /********** Body **********/
+
+  /********** Header **********/
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  /********** Navigation Bar **********/
+  /********** Main **********/
+  main {
+    margin: 10rem;
+    margin-top: 24.5rem;
+    font-size: 6rem;
+  }
+
+  #submit {
+    padding: 2rem 20rem;
+  }
+
+  /********** Footer **********/
+}
+
+/* Tablet-landscape */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /********** Root **********/
+  html {
+    font-size: 0.3vw;
+    scroll-padding-top: 24.4rem;
+  }
+
+  /********** Body **********/
+
+  /********** Header **********/
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #header-img {
+    margin: 0 10rem;
+  }
+
+  /********** Navigation Bar **********/
+  #nav-bar {
+    margin: 0;
+    padding: 0;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .nav-link {
+    padding: 7rem;
+    font-size: 6rem;
+  }
+  /********** Main **********/
+  main {
+    margin: 0 10rem;
+    margin-top: 10.5rem;
+    padding: 10rem 20rem;
+    font-size: 8rem;
+  }
+
+  section {
+    margin-bottom: 20rem;
+  }
+
+  section h2 {
+    margin-bottom: 10rem;
+    text-align: left;
+  }
+
+  #math-cons p {
+    font-weight: 700;
+    padding: 5rem;
+    text-align: end;
+  }
+
+  #video {
+    max-width: 180rem;
+    max-height: 100rem;
+  }
+
+  #services p {
+    text-align: end;
+  }
+
+  #plans {
+    font-size: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  #plans p {
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  #email-label {
+    margin-bottom: 8rem;
+    font-size: 9rem;
+    font-weight: 700;
+  }
+
+  #email {
+    margin-bottom: 8rem;
+  }
+
+  #submit {
+    padding: 2rem 30rem;
+  }
+
+  /********** Footer **********/
+
+  footer {
+    font-size: 8rem;
+  }
+
+  footer a {
+    padding: 0 5rem 0 0;
+  }
+}
+
+/* Laptops and desktops */
+@media only screen and (min-width: 1200px) {
+  /********** Root **********/
+  html {
+    font-size: 0.3vw;
+    scroll-padding-top: 24.4rem;
+  }
+
+  /********** Body **********/
+
+  /********** Header **********/
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #header-img {
+    margin: 0 10rem;
+  }
+  /********** Navigation Bar **********/
+  #nav-bar {
+    margin: 0;
+    padding: 0;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .nav-link {
+    padding: 4rem;
+    font-size: 5rem;
+  }
+
+  /********** Main **********/
+  main {
+    margin: 0 10rem;
+    margin-top: 10.5rem;
+    padding: 10rem 20rem;
+    font-size: 8rem;
+  }
+
+  section {
+    margin-bottom: 20rem;
+  }
+
+  section h2 {
+    margin-bottom: 10rem;
+    text-align: left;
+  }
+
+  #math-cons p {
+    font-weight: 700;
+    padding: 5rem;
+    text-align: end;
+  }
+
+  #video {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #services p {
+    text-align: end;
+  }
+
+  #plans {
+    font-size: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  #plans p {
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  #email-label {
+    margin-bottom: 8rem;
+    font-size: 9rem;
+    font-weight: 700;
+  }
+
+  #email {
+    margin-bottom: 8rem;
+  }
+
+  #submit {
+    padding: 2rem 30rem;
+  }
+
+  /********** Footer **********/
+  footer {
+    font-size: 8rem;
+  }
+
+  footer a {
+    padding: 0 5rem 0 0;
+  }
+}
